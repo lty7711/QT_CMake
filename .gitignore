@@ -10,6 +10,8 @@ cmake_install.cmake
 Makefile
 *.cmake
 !CMakeLists.txt
+CMakePresets.json
+CMakeUserPresets.json
 
 # Qt相关
 *.pro.user
