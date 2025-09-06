@@ -1,12 +1,7 @@
 cmake_minimum_required(VERSION 3.30)
-project(qt_cmake)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# 目前这里把路径写死，未找到设置生成 ui_XXX.h 文件输出目录的方法
-include_directories("D:/Code/QT_Cmake/build/qt_cmake_autogen/include_Release")
-include_directories("D:/Code/QT_Cmake/build/qt_cmake_autogen/include_Debug")
 
 #[[
 	moc = Meta Object Compiler（元对象编译器）
@@ -34,4 +29,15 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 # 设置静态库(.lib/.a)和导入库输出路径
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
-add_subdirectory(QPushButton)
+# 可以用但不推荐：全局包含目录
+include_directories(
+    "D:/Qt/6.9.0/msvc2022_64/include"
+    "D:/Qt/6.9.0/msvc2022_64/include/QtCore"
+    "D:/Qt/6.9.0/msvc2022_64/include/QtWidgets"
+    "D:/Qt/6.9.0/msvc2022_64/include/QtGui"
+)
+
+# 导入QT的库
+find_package(Qt6 COMPONENTS Widgets REQUIRED)
+# 显式设置包含目录
+add_subdirectory(qPushButton)

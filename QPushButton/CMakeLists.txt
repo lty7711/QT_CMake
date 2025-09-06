@@ -4,8 +4,6 @@ project(pushButton)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# µ¼ÈëQTµÄ¿â
-find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 add_executable(${PROJECT_NAME} "mainwindow.cpp" mainwindow.ui "mainwindow.h" "main.cpp")
 
