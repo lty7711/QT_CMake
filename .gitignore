@@ -30,6 +30,7 @@ qrc_*.cpp
 *.dylib
 *.a
 *.lib
+*.pdb
 
 # Visual Studio
 .vs/
