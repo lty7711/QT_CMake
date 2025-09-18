@@ -1,0 +1,15 @@
+QDialog#LoginDialog, RegsDialog{
+	background-color:rgb(255,255,255)
+}
+
+#userLabel, #pwdLabel{
+	color:black;
+}
+
+#err_tips[state = 'normal']{
+	color: green;
+}
+
+#err_tips[state = 'err']{
+	color: red;
+}

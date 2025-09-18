@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QApplication>
 #include <QString>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
