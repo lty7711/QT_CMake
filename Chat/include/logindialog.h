@@ -19,7 +19,7 @@ private:
     Ui::LoginDialog *ui;
 
 signals:
-    void SwitchRegsDlg();  // 发送切换到注册页面的信号
+    void SwitchRegsDlgSignal();  // ??????????
 };
 
 #endif // LOGINDIALOG_H

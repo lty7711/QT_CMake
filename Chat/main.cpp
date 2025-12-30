@@ -5,6 +5,9 @@
 #include <iostream>
 
 #include "mainwindow.h"
+#include "singleton.h"
+#include <string>
+#include "http_manager.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,6 +23,7 @@ int main(int argc, char *argv[])
     else {
         std::cout << "Open failed" << std::endl;
     }
+    // HttpManager::GetInstance();
     MainWindow w;
     w.setWindowTitle("IIfChat");
     w.setWindowIcon(QIcon(":/icons/icon.ico"));

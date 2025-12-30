@@ -39,7 +39,7 @@ include_directories(
 )
 
 # 导入QT的库
-find_package(Qt6 COMPONENTS Widgets Core Gui REQUIRED)
+find_package(Qt6 COMPONENTS Widgets Core Gui REQUIRED Network)
 # 显式设置包含目录
 #add_subdirectory(qPushButton)
 add_subdirectory(Chat)
